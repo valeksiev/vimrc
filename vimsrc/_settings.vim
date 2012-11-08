@@ -33,7 +33,7 @@ set showmode                          " always show what mode we'r
 set nowrap                            " don't wrap lines
 set autoread                          " auto reload file on change.
 set visualbell                        " No sounds
-set autochdir                         " Change working dir to the open file
+"set autochdir                         " Change working dir to the open file
 "set list                              " show non-print characters,...
 "set listchars=trail:⋅,nbsp:⋅,tab:▷⋅   " for tabs and trailing spaces
 "set relativenumber                    " relative line numbers (>= Vim 7.3)
@@ -70,7 +70,7 @@ set mat=5                 " Blink 5 second
 "set backupdir=~/.vim/backups   " Where to store the backups
 "set directory=~/.vim/tmp       " Temporary files will go
 set undolevels=1500             " maximum number of changes that can be undone
-set undoreload=15000            " maximum lines to save for undo on buffer reload.
+"set undoreload=15000            " maximum lines to save for undo on buffer reload.
 " Turn off swap files
 "set noswapfile
 "set nobackup
@@ -93,7 +93,7 @@ syntax enable
 set background=dark
 " colorscheme molokai "railscasts_alt
 colorscheme default
-
+syntax on
 " -----------------------------------------------------------------------------
 " Windows settings
 " -----------------------------------------------------------------------------
@@ -107,6 +107,10 @@ set splitbelow splitright
 set tabpagemax=15                       " show only 15 tabs.
 set guitablabel=%!expand(\"\%:t\")i
 
+" -----------------------------------------------------------------------------
+"  NerdTree
+" -----------------------------------------------------------------------------
+autocmd vimenter * NERDTree
 " -----------------------------------------------------------------------------
 " Code xx column line - very useful I think?
 " -----------------------------------------------------------------------------
