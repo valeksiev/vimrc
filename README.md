@@ -6,18 +6,11 @@
 
 ### Linux
 ```
-git clone http://bdryanovski@github.com/bdryanovski/vimrc.git $HOME/.vim
-cd $HOME/.vim
+git clone https://github.com/valeksiev/vimrc.git path/to/vimconfs
+cd path/to/vimconfs
 git submodule update --init
-ln $HOME/.vim/vimrc.vim $HOME/.vimrc
-```
-
-### Windows
-```
-git clone http://bdryanovski@github.com/bdryanovski/vimrc.git C:/Users/xxx/vimfiles/
-cd C:/Users/xxx/vimfiles/
-git submodule update --init
-copy C:/Users/xxx/vimfiles/vimrc.vim C:/Users/xxx/_vimrc
+ln -s path/to/vimconfs/vimrc.vim $HOME/.vimrc
+ln -s path/to/vimconfs $HOME/.vim
 ```
 
 ## Files 
